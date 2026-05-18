@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dabar Technology — Pedro Santos">
+  <title>Dabar Technology | A palavra que constrói.</title>
+  <meta name="description"
+    content="Dabar Technology — Sistemas sólidos, confiáveis e com propósito. Para empresas que constroem sobre uma base que não cede.">
+  <meta name="keywords" content="desenvolvimento web, sistemas, tecnologia, B2B, São Paulo">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <div class="mobile-symbol">דבר</div>
+    <button class="mobile-close" id="mobileClose"><i class="bi bi-x"></i></button>
+    <a href="#home" onclick="closeMobile()">Home</a>
+    <a href="#sobre" onclick="closeMobile()">A Marca</a>
+    <a href="#servicos" onclick="closeMobile()">Serviços</a>
+    <a href="#portfolio" onclick="closeMobile()">Portfólio</a>
+    <a href="#missao" onclick="closeMobile()">Missão</a>
+    <a href="#contato" onclick="closeMobile()">Contato</a>
+  </div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <a href="#home" class="logo">
+      <img src="assets/img/simlificado/dabar_logo_final_gold.png" alt="Dabar Technology" class="logo-image">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="#sobre">A Marca</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#missao">Missão</a></li>
+        <li><a href="#contato" class="nav-cta">Falar com a Dabar</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-mobile-btn" id="menuBtn">
+      <i class="bi bi-list"></i>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-watermark">דבר</div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Dabar Technology · Est. 2026</div>
+      <span class="hero-hebrew">דבר</span>
+      <div class="hero-name">dabar <em>technology</em></div>
+      <div class="hero-tech">DA-BAR · Hebraico · A palavra que age</div>
+      <p class="hero-slogan">A palavra que constrói.</p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn-primary">
+          Iniciar um projeto <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="#sobre" class="btn-ghost">
+          Conhecer a marca <i class="bi bi-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+
+    <a href="#sobre" class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- SOBRE / SÍMBOLO -->
+  <section id="sobre">
+    <div class="sobre-grid">
+      <div class="sobre-visual">
+        <div class="symbol-showcase reveal">
+          <span class="symbol-main">דבר</span>
+        </div>
+        <div class="symbol-letters reveal reveal-delay-1">
+          <div class="letter-card">
+            <span class="letter-heb">ד</span>
+            <span class="letter-name">Dalet</span>
+            <span class="letter-meaning">Porta · Entrada</span>
+          </div>
+          <div class="letter-card">
+            <span class="letter-heb">ב</span>
+            <span class="letter-name">Bet</span>
+            <span class="letter-meaning">Casa · Fundação</span>
+          </div>
+          <div class="letter-card">
+            <span class="letter-heb">ר</span>
+            <span class="letter-name">Resh</span>
+            <span class="letter-meaning">Cabeça · Liderança</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-content">
+        <div class="section-label reveal">A Marca</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Três letras.<br><strong>Um universo de significado.</strong>
+        </h2>
+        <p class="section-desc reveal reveal-delay-2">
+          Dabar (דָּבָר) é uma das palavras mais poderosas do hebraico bíblico. Não é apenas "palavra" no sentido
+          passivo — é a palavra que age, que cria realidade ao ser pronunciada. Aparece mais de 1.400 vezes no Antigo
+          Testamento.
+        </p>
+
+        <div class="layers">
+          <div class="layer reveal reveal-delay-1">
+            <span class="layer-num">01</span>
+            <div class="layer-content">
+              <h4>Superfície — O Código</h4>
+              <p>Símbolo único e misterioso. Para desenvolvedores, ecoa a linguagem de programação. Nome curto, forte,
+                fácil em qualquer idioma do mundo.</p>
+            </div>
+          </div>
+          <div class="layer reveal reveal-delay-2">
+            <span class="layer-num">02</span>
+            <div class="layer-content">
+              <h4>Camada 1 — O Hebraico</h4>
+              <p>Dabar (דָּבָר) = a palavra que cria realidade. Código é linguagem. A Dabar literalmente pratica dabar
+                ao construir sistemas.</p>
+            </div>
+          </div>
+          <div class="layer reveal reveal-delay-3">
+            <span class="layer-num">03</span>
+            <div class="layer-content">
+              <h4>Camada 2 — João 1:1</h4>
+              <p>"No princípio era o Verbo (Dabar)." A fundação espiritual da empresa está embutida no símbolo.
+                Invisível para quem não conhece. Inesquecível para quem descobre.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="services-container">
+      <div class="section-label reveal">Serviços</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Sistemas que constroem.<br><strong>Resultados que permanecem.</strong>
+      </h2>
+      <p class="section-desc reveal reveal-delay-2">
+        A Dabar atua exclusivamente B2B. Cada projeto é construído com a solidez de uma fundação que não cede — para
+        empresas que precisam crescer sobre tecnologia confiável.
+      </p>
+
+      <div class="services-grid reveal">
+        <!-- Featured -->
+        <div class="service-card featured">
+          <div class="service-num">01</div>
+          <div class="service-icon"><i class="bi bi-code-square"></i></div>
+          <h3>Desenvolvimento Web Premium</h3>
+          <p>Sites institucionais, landing pages de alta conversão e plataformas digitais com design exclusivo,
+            performance otimizada e código limpo. Cada sistema é único — construído para durar.</p>
+          <div class="service-tags">
+            <span class="service-tag">HTML</span>
+            <span class="service-tag">CSS</span>
+            <span class="service-tag">JavaScript</span>
+            <span class="service-tag">React</span>
+            <span class="service-tag">Node.js</span>
+          </div>
+          <div class="service-card-bg">דבר</div>
+        </div>
+
+        <!-- Marketing -->
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <div class="service-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <h3>Marketing Digital</h3>
+          <p>Estratégias de SEO, gestão de tráfego e conteúdo que geram resultados mensuráveis para o seu negócio.</p>
+          <div class="service-tags">
+            <span class="service-tag">SEO</span>
+            <span class="service-tag">Ads</span>
+          </div>
+        </div>
+
+        <!-- Branding -->
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <div class="service-icon"><i class="bi bi-palette"></i></div>
+          <h3>Identidade Visual</h3>
+          <p>Brand books e designs que comunicam com precisão a essência da sua marca no mercado.</p>
+          <div class="service-tags">
+            <span class="service-tag">Branding</span>
+            <span class="service-tag">UI/UX</span>
+          </div>
+        </div>
+
+        <!-- Sistemas -->
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <div class="service-icon"><i class="bi bi-cpu"></i></div>
+          <h3>Soluções Digitais</h3>
+          <p>Sistemas personalizados, automações e integrações que eliminam fricção e otimizam processos internos.</p>
+          <div class="service-tags">
+            <span class="service-tag">APIs</span>
+            <span class="service-tag">Automação</span>
+          </div>
+        </div>
+
+        <!-- Consultoria -->
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <div class="service-icon"><i class="bi bi-lightbulb"></i></div>
+          <h3>Consultoria Tech</h3>
+          <p>Orientação estratégica para transformação digital. A Dabar entende o seu negócio antes de escrever uma
+            linha de código.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section id="portfolio">
+    <div class="portfolio-container">
+      <div class="portfolio-header">
+        <div>
+          <div class="section-label reveal">Portfólio</div>
+          <h2 class="section-title reveal reveal-delay-1">
+            Projetos que<br><strong>falam por si.</strong>
+          </h2>
+        </div>
+        <p class="reveal reveal-delay-2"
+          style="font-size:0.82rem;color:var(--text-muted);max-width:280px;text-align:right;">
+          Sistemas desenvolvidos para gerar resultados reais em empresas reais.
+        </p>
+      </div>
+
+      <div class="projects-list">
+        <a href="https://frutamina.com.br" target="_blank" class="project-row reveal">
+          <span class="project-num">01</span>
+          <div class="project-info">
+            <h3>Frutamina</h3>
+            <p>Plataforma de distribuição de hortifruti — responsiva, moderna e clara.</p>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">JS</span>
+          </div>
+          <i class="bi bi-arrow-up-right project-arrow"></i>
+        </a>
+
+        <a href="#" class="project-row reveal reveal-delay-1">
+          <span class="project-num">02</span>
+          <div class="project-info">
+            <h3>Celeiro Real</h3>
+            <p>Website institucional com foco em conversão e agendamento online.</p>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">JS</span>
+          </div>
+          <i class="bi bi-arrow-up-right project-arrow"></i>
+        </a>
+
+        <a href="#" class="project-row reveal reveal-delay-2">
+          <span class="project-num">03</span>
+          <div class="project-info">
+            <h3>Em breve</h3>
+            <p>Novo projeto em desenvolvimento — B2B, alta complexidade.</p>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Vue.js</span>
+            <span class="stack-tag">Firebase</span>
+          </div>
+          <i class="bi bi-arrow-up-right project-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSÃO -->
+  <section id="missao">
+    <div class="mission-container">
+      <div>
+        <div class="section-label reveal">Missão & Filosofia</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Construir sobre uma<br><strong>base que não cede.</strong>
+        </h2>
+        <p class="section-desc reveal reveal-delay-2">
+          A missão da Dabar não é entregar projetos — é construir sistemas sólidos e confiáveis para que empresas
+          cresçam sobre uma fundação inabalável.
+        </p>
+        <div class="verse-block reveal reveal-delay-3">
+          <p class="verse-text">"No princípio era o Verbo (Logos/Dabar), e o Verbo estava com Deus, e o Verbo era Deus."
+          </p>
+          <span class="verse-ref">João 1:1 · A fundação da marca</span>
+        </div>
+        <div class="verse-block reveal reveal-delay-4" style="margin-top:1.5rem;border-left-color:var(--safira-light);">
+          <p class="verse-text">"No princípio, o código."</p>
+          <span class="verse-ref">Slogan secundário · Para eventos e pitches</span>
+        </div>
+      </div>
+
+      <div class="pilares">
+        <div class="pilar reveal">
+          <div class="pilar-icon"><i class="bi bi-door-open"></i></div>
+          <h4>Porta (ד Dalet)</h4>
+          <p>A Dabar abre caminhos. Cada sistema entregue é uma entrada para o crescimento do cliente — uma nova
+            possibilidade que antes não existia.</p>
+        </div>
+        <div class="pilar reveal reveal-delay-1">
+          <div class="pilar-icon"><i class="bi bi-house"></i></div>
+          <h4>Fundação (ב Bet)</h4>
+          <p>Código limpo, arquitetura sólida, sistemas que funcionam quando ninguém está vendo. Como o abismo antes da
+            criação — a estrutura que sustenta tudo.</p>
+        </div>
+        <div class="pilar reveal reveal-delay-2">
+          <div class="pilar-icon"><i class="bi bi-trophy"></i></div>
+          <h4>Liderança (ר Resh)</h4>
+          <p>Tecnologia com propósito. A Dabar não executa — lidera. Parceiro estratégico que entende o negócio antes de
+            escrever uma linha de código.</p>
+        </div>
+        <div class="pilar reveal reveal-delay-3">
+          <div class="pilar-icon"><i class="bi bi-globe-americas"></i></div>
+          <h4>Abrangência</h4>
+          <p>Brasil e mercado internacional. Pequenas, médias e grandes empresas. A palavra que constrói não conhece
+            fronteiras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="contact-container">
+      <div>
+        <div class="section-label reveal">Contato</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Prontos para construir<br><strong>com você.</strong>
+        </h2>
+        <p class="section-desc reveal reveal-delay-2">
+          Cada grande sistema começa com uma conversa. Conta pra gente sobre o seu projeto.
+        </p>
+
+        <form class="contact-form reveal reveal-delay-3" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Empresa</label>
+              <input type="text" id="company" name="company" placeholder="Nome da empresa">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Serviço</label>
+            <select id="service" name="service">
+              <option value="">Selecionar serviço</option>
+              <option>Desenvolvimento Web</option>
+              <option>Marketing Digital</option>
+              <option>Identidade Visual</option>
+              <option>Soluções Digitais</option>
+              <option>Consultoria Tech</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Conta sobre o seu projeto..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="bi bi-send"></i> Enviar mensagem
+          </button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-mission reveal">
+          <span class="symbol">דבר</span>
+          <p>A palavra que constrói. Cada sistema entregue pela Dabar é código que age — que cria realidade digital para
+            o seu negócio.</p>
+        </div>
+
+        <a href="https://wa.me/5511971043603" target="_blank" class="contact-item reveal reveal-delay-1">
+          <div class="contact-item-icon"><i class="bi bi-whatsapp"></i></div>
+          <div>
+            <h4>WhatsApp</h4>
+            <span>(11) 97104-3603</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/pathy_systems/" target="_blank" class="contact-item reveal reveal-delay-2">
+          <div class="contact-item-icon"><i class="bi bi-instagram"></i></div>
+          <div>
+            <h4>Instagram</h4>
+            <span>Em breve — Dabar Technology</span>
+          </div>
+        </a>
+
+        <a href="mailto:pathysystems@gmail.com" class="contact-item reveal reveal-delay-3">
+          <div class="contact-item-icon"><i class="bi bi-envelope"></i></div>
+          <div>
+            <h4>E-mail</h4>
+            <span>pathysystems@gmail.com</span>
+          </div>
+        </a>
+
+        <a href="tel:+5511971043603" class="contact-item reveal reveal-delay-4">
+          <div class="contact-item-icon"><i class="bi bi-telephone"></i></div>
+          <div>
+            <h4>Telefone</h4>
+            <span>(11) 97104-3603</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#home" class="footer-brand">
+        <span class="symbol">דבר</span>
+        <span class="name">dabar technology</span>
+      </a>
+      <p class="footer-copy">© 2025 Dabar Technology · A palavra que constrói. · דָּבָר</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/pathy_systems/" target="_blank" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://wa.me/5511971043603" target="_blank" aria-label="WhatsApp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://github.com/pathy-systems" target="_blank" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- NOTIFICATION -->
+  <div class="notify" id="notify">
+    <i class="bi bi-check-circle"></i>
+    Mensagem enviada. A Dabar entrará em contato em breve.
+  </div>
+
+
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+
+</html>
