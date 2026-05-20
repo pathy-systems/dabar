@@ -311,7 +311,7 @@
 
     /* ── SERVICES ── */
     #servicos {
-      background: var(--midnight);
+      background: var(--midnight-deep);
     }
 
     .services-container {
@@ -329,7 +329,7 @@
     }
 
     .service-card {
-      background: var(--midnight);
+      background: var(--midnight-deep);
       padding: 2.5rem;
       position: relative;
       overflow: hidden;
@@ -424,7 +424,7 @@
 
     /* ── PORTFOLIO ── */
     #portfolio {
-      background: var(--midnight-deep);
+      background: var(--midnight);
       overflow: hidden;
     }
 
@@ -454,7 +454,7 @@
       align-items: center;
       gap: 2rem;
       padding: 2rem 2.5rem;
-      background: var(--midnight-deep);
+      background: var(--midnight);
       text-decoration: none;
       color: inherit;
       transition: background 0.3s;
